@@ -1,0 +1,2 @@
+const t=document.querySelectorAll("button");let a=null;[...t].forEach((e=>{e.addEventListener("click",(e=>{e.target.hasAttribute("data-start")&&(t[0].disabled=!0,t[1].disabled=!1,a=setInterval((()=>{document.body.style.background=`#${Math.floor(16777215*Math.random()).toString(16).padStart(6,0)}`}),1e3)),e.target.hasAttribute("data-stop")&&(clearInterval(a),t[0].disabled=!1,t[1].disabled=!0)}))}));
+//# sourceMappingURL=01-color-switcher.9a553ba2.js.map
