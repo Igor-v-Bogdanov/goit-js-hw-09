@@ -1,6 +1,6 @@
 const btns = document.querySelectorAll('button');
-
-console.log(btns);
+let timerId = null;
+// console.log(btns);
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
